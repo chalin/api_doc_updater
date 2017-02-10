@@ -95,7 +95,7 @@ class ApiDocUpdater {
     }
     _numSrcDirectives++;
     final prefixedCodeExcerpt =
-        newCodeExcerpt.map((line) => '$linePrefix$line').toList();
+        newCodeExcerpt.map((line) => '$linePrefix$line'.trim()).toList();
     if (!_listEq(currentCodeBlock, prefixedCodeExcerpt)) _numUpdatedFrag++;
     return prefixedCodeExcerpt;
   }

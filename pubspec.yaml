@@ -1,5 +1,5 @@
 name: api_doc_updater
-version: 0.0.1
+version: 0.2.0
 description: Syntactic API doc updater for @source directives.
 author: Patrice Chalin <pchalin@gmail.com>
 homepage: https://github.com/chalin/api_doc_updater

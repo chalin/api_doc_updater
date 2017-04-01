@@ -71,7 +71,7 @@ void main() {
       var fragPath = p.join(apiDocUpdater.fragmentPathPrefix,
           'frag_with_trailing_whitespace.dart.txt');
       var frag = _readFile(fragPath);
-      expect(frag.endsWith('\t \n'), isTrue);
+      expect(frag.endsWith('\t \n\n'), isTrue);
     });
 
     _stdFileTest('trim.dart');

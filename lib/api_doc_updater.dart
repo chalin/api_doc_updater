@@ -115,7 +115,7 @@ class ApiDocUpdater {
     try {
       final result = new File(fullPath).readAsStringSync().split(_eol);
       // All excerpts are [_eol] terminated, so drop the last blank line
-      if (result.length > 0 && result.last == '') result.removeLast();
+      while (result.length > 0 && result.last == '') result.removeLast();
       return result;
     } on FileSystemException catch (e) {
       stderr.writeln(

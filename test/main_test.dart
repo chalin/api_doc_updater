@@ -68,9 +68,9 @@ void main() {
 
   group('Handle trailing space;', () {
     test('test input file has expected trailing whitespace', () {
-      var fragPath = p.join(apiDocUpdater.fragmentPathPrefix,
+      final fragPath = p.join(apiDocUpdater.fragmentPathPrefix,
           'frag_with_trailing_whitespace.dart.txt');
-      var frag = _readFile(fragPath);
+      final frag = _readFile(fragPath);
       expect(frag.endsWith('\t \n\n'), isTrue);
     });
 

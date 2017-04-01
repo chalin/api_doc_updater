@@ -13,4 +13,4 @@ var basic1;
 ///   var greeting = 'hello';
 ///   var scope = 'world';
 /// ```
-void f() { }
+void f() {}

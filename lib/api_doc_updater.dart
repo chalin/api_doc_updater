@@ -84,7 +84,8 @@ class ApiDocUpdater {
       final match = publicApiRegEx.firstMatch(line);
       if (match == null) {
         // TODO: it would be nice if we could print a line number too.
-        stderr.writeln('Error: $_filePath: unterminated markdown code block for @source "$relativePath"');
+        stderr.writeln(
+            'Error: $_filePath: unterminated markdown code block for @source "$relativePath"');
         return <String>[];
       } else if (match[1] != null) {
         // We've found the closing code-block marker.

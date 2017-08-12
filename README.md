@@ -1,4 +1,6 @@
-# Dart API doc source-code-fragment updater
+# DEPRECATED - Dart API doc source-code-fragment updater
+
+**Superseded by https://github.com/chalin/code_excerpt_updater.**
 
 This is the repo for a simple _line-based_ **Dart API doc** updater for `{@source}` code fragment directives.
 That is, the updater processes input source files line-by-line, looking for `{@source}` 
